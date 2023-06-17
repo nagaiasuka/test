@@ -1,6 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Train+One&display=swap');
-
+html{
+    height: -webkit-fill-available;
+}
 body{
     margin: 0px;
     padding: 0px;
@@ -17,6 +19,8 @@ h3{
     position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
     height: 100vh;/*高さを全画面にあわせる*/
     width: 100vw;
+    min-height: -webkit-fill-available;
+
 } 
 
 #video-area{
@@ -160,6 +164,8 @@ html{
     width: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    min-height: -webkit-fill-available;
+
 }
 
 .main-content2{
@@ -167,6 +173,8 @@ html{
     background-color:rgba(0,0,0,0.3);
     height: 100vh;
     color: white;
+    min-height: -webkit-fill-available;
+
 }
 
 .main-content3{
@@ -175,6 +183,8 @@ html{
     background-size: cover;
     background-position: center;
     height: 100vh;
+    min-height: -webkit-fill-available;
+
 }
 
 #foreword-content{
