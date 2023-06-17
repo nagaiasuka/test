@@ -105,7 +105,52 @@ html{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -25%);
+
     }
+
+    #sub-title h4{
+        font-size: 16px;
+    }
+
+    .nav-item{
+        font-size: 10px;
+    }
+
+    .text-center{
+        font-size: 16px;
+    }
+
+    #concept-secsion p {
+        font-size: 10px;
+
+    }
+
+    .card-text{
+        font-size: 10px;
+    }
+
+    #info dt,dd{
+        font-size: 12px;
+    }
+
+    #test-text li{
+        font-size: 12px;
+    }
+
+    #test-box p{
+        font-size: 12px;
+    }
+
+    #test-box span{
+        font-size: 10px;
+    }
+
+    #company h4{
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+    }
+
 }
 
 .main-content{
@@ -209,3 +254,4 @@ dd{
     font-size: 50px;
     color: black;
   }
+
