@@ -1,0 +1,211 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Train+One&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Klee One', cursive;
+}
+
+h3{
+    margin: 0;
+}
+#header{
+    position: relative;/*h1の中央寄せ配置の起点とするためのrelative*/
+    height: 100vh;/*高さを全画面にあわせる*/
+    width: 100vw;
+} 
+
+#video-area{
+    position: fixed;
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+
+a:link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #fff;
+}
+   
+#video {
+    top: 0;
+    left: 0;
+      width: auto;
+      min-width: 100%;
+      min-height: 100%;
+      overflow-x: hidden;
+      object-fit: cover;
+      margin: 0;
+}
+
+/*見出し設定*/
+
+.title1{
+    /*要素の配置*/
+    /*見た目の調整*/
+    color:#fff;
+    text-shadow: 0 0 15px #666;
+    font-family: 'Train One', cursive;
+
+}
+#title3{
+    /*要素の配置*/
+    position:absolute;
+    /*見た目の調整*/
+    color: black;
+    text-shadow: 0 0 15px #666;
+    padding-left: 1rem;
+    font-family: 'Train One', cursive;
+
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+#sub-title{  
+    /*要素の配置*/
+    position:absolute;
+    /*見た目の調整*/
+    color:#fff;
+    text-shadow: 0 0 15px #666;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 480px) {
+    #sub-title{
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+      
+        /*要素の配置*/
+        position:absolute;
+        /*見た目の調整*/
+        color:#fff;
+        text-shadow: 0 0 15px #666;
+        height: 100vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+    }
+}
+
+.main-content{
+    margin: 0;
+    background-color:rgba(255,255,255,0.5);
+    height: 100vh;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.main-content2{
+    width: 100%;
+    background-color:rgba(0,0,0,0.3);
+    height: 100vh;
+    color: white;
+}
+
+.main-content3{
+    width: 100%;
+    background-image: url('../img/smooth-gray-concrete-wall.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#foreword-content{
+    background-color:white;
+}
+
+dt{
+    float: left ;
+    clear: left ;
+    margin-right: 0.5em ;
+    width: 120px ;
+}
+
+dd{
+    float: left ;
+    margin-left: 1em ;
+}
+
+
+
+
+
+.swiper {
+    /*スライダーの幅と高さを調整*/
+    width: min(100%, 600px);
+    height: 500px;
+  }
+  
+  .swiper-slide {
+    /*スライド要素の幅と高さを調整*/
+    width: 100%;
+    height: 100%;
+  
+    /*テキストの位置調整*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /*テキストの色と太さを指定*/
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /*①各スライドに以下クラスを追加で付与*/
+  /*②スライド背景色を設定*/
+  .slide1 {
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+  }
+  
+  .slide2 {
+    color: black;
+    background-color:rgba(255,255,255,0.5);
+  }
+  
+  .english_word{
+    font-family: 'Train One', cursive;
+  }
+
+  #page_top{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+  #page_top a{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f139';
+    font-size: 50px;
+    color: black;
+  }
